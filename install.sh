@@ -14,6 +14,7 @@ sudo mv ./scripts/* /opt/moonlight-osmc/
 echo "Setting permissions..."
 sudo chmod -R 755 /opt/moonlight-osmc/
 echo "Generating .moonlight.conf"
+mkdir ~/.moonlight
 echo "MOONLIGHT_OPTS = '-1080 -30fps'" > ~/.moonlight/moonlight.conf
 echo "Enter the IP of the PC you will be streaming from:"
 read GEN_GAMESTREAM_IP
