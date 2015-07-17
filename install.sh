@@ -5,13 +5,14 @@ sudo apt-get install libopus0 libexpat1 libssl1.0.0 libasound2 libudev0 libavahi
 echo "Installing moonlight..."
 sudo dpkg -i ./moonlight-osmc.deb
 echo "Copying scripts..."
+sudo rm -rf /opt/moonlight
 sudo mkdir /opt/moonlight
 sudo mv ./scripts/* /opt/moonlight/
 echo "Setting permissions..."
 sudo chmod -R 755 /opt/moonlight/
 echo "Generating .moonlight.conf"
+sudo rm -rf /home/osmc/.moonlight
 mkdir /home/osmc/.moonlight
-rm -rf /home/osmc/.moonlight/moonlight.conf
 echo "#!/bin/sh" > /home/osmc/.moonlight/moonlight.conf
 echo "MOONLIGHT_OPTS='-1080 -30fps'" >> /home/osmc/.moonlight/moonlight.conf
 echo "Enter the IP of the PC you will be streaming from:"
