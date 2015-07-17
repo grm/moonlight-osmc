@@ -1,7 +1,6 @@
 #!/bin/sh
 # Originally written by dodslaser
 echo "Installing dependencies..."
-sudo apt-get update
 sudo apt-get install libopus0 libexpat1 libssl1.0.0 libasound2 libudev0 libavahi-client3 libcurl3 libevdev2 libavahi-common3 libc6
 echo "Installing moonlight..."
 sudo dpkg -i ./moonlight-osmc.deb
