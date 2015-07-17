@@ -1,6 +1,7 @@
 #!/bin/sh
 # Originally written by miko
 # Modified by dodslaser
+sudo modprobe snd-bcm2835
 sudo openvt -c 7 -s -f clear
 sudo openvt -c 7 -s -f echo "Running moonlight from KODI"
 # Start watchdog
