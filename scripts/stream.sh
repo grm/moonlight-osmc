@@ -1,6 +1,6 @@
 # Originally written by miko
 # Modified by dodslaser
-. ~/.moonlight/moonlight.conf
+. /home/osmc/.moonlight/moonlight.conf
 sudo modprobe snd-bcm2835
 sudo moonlight pair $GAMESTREAM_IP
-sudo moonlight stream $GAMESTREAM_IP $MOONLIGHT_OPTS
+sudo moonlight stream $MOONLIGHT_OPTS 
