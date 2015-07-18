@@ -1,20 +1,21 @@
 #!/bin/sh
 # Originally written by dodslaser
-echo "Auto-loading snd-bcm2835..."
-echo snd-bcm2835 > /etc/modules
-sh sudo modprobe snd-bcm2835
+echo "Installing dependencies..."
+sudo apt-get install libopus0 libexpat1 libssl1.0.0 libasound2 libudev0 libavahi-client3 libcurl3 libevdev2 libavahi-common3 libc6
+echo "Installing moonlight..."
+sudo dpkg -i ./moonlight-osmc.deb
 echo "Copying scripts..."
-mkdir /opt/moonlight-osmc
-mv ./scripts/moonlight.sh /opt/moonlight-osmc/moonlight.sh
-mv ./scripts/moonlight-watchdog.sh /opt/moonlight-osmc/moonlight-watchdog.sh
-mv ./scripts/stream.sh /opt/moonlight-osmc/stream.sh
+sudo rm -rf /opt/moonlight
+sudo mkdir /opt/moonlight
+sudo mv ./scripts/* /opt/moonlight/
 echo "Setting permissions..."
-chmod 755 /opt/moonlight-osmc/moonlight.sh
-chmod 755 /opt/moonlight-osmc/moonlight-watchdog.sh
-chmod 755 /opt/moonlight-osmc/stream.sh
+sudo chmod -R 755 /opt/moonlight/
 echo "Generating .moonlight.conf"
-echo "MOONLIGHT_OPTS = '-1080 -30fps'" > ~/.moonlight/moonlight.conf
+sudo rm -rf /home/osmc/.moonlight
+mkdir /home/osmc/.moonlight
+echo "#!/bin/sh" > /home/osmc/.moonlight/moonlight.conf
+echo "MOONLIGHT_OPTS='-1080 -30fps'" >> /home/osmc/.moonlight/moonlight.conf
 echo "Enter the IP of the PC you will be streaming from:"
 read GEN_GAMESTREAM_IP
-echo "GAMESTREAM_IP = $GEN_GAMESTREAM_IP" >> ~/.moonlight/moonlight.conf
+echo "GAMESTREAM_IP='$GEN_GAMESTREAM_IP'" >> /home/osmc/.moonlight/moonlight.conf
 chmod 755 ~/.moonlight/moonlight.conf
