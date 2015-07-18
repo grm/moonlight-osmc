@@ -1,0 +1,9 @@
+#!/bin/sh
+echo "Generating configuration file..."
+mkdir /home/osmc/.moonlight-osmc
+echo "#!/bin/sh" > /home/osmc/.moonlight-osmc/moonlight-osmc.conf
+echo "MOONLIGHT_OPTS='-1080 -30fps'" >> /home/osmc/.moonlight-osmc/moonlight-osmc.conf
+echo "Enter the IP of the PC you will be streaming from:"
+read GEN_GAMESTREAM_IP
+echo "GAMESTREAM_IP='$GEN_GAMESTREAM_IP'" >> /home/osmc/.moonlight-osmc/moonlight-osmc.conf
+chmod 755 /home/osmc/.moonlight-osmc/moonlight-osmc.conf

@@ -10,20 +10,20 @@ I created this project mainly for personal use, so updates may be a bit slow. Th
 sudo echo 'deb http://archive.itimmer.nl/raspbian/moonlight wheezy main' >> /etc/apt/sources.list
 sudo apt-get update
 ```
-- Run the installer
+- Install ```moonlight-embedded``` from the provided .deb and all dependencies
 ```
-chmod 755 install.sh
-./install.sh
+sudo apt-get install libopus0 libexpat1 libssl1.0.0 libasound2 libudev0 libavahi-client3 libcurl3 libevdev2 libavahi-common3 libc6
+sudo dpkg -i moonlight-embedded_x.x.x-osmc1_armhf.deb
 ```
 - Make sure the sound module is loaded. You can load it on boot by appending ```snd-bcm2835``` to ```/etc/modules```
 ```
 sudo modprobe snd-bcm2835
 ```
-- Test everything by running ```moonlight.sh```
+- Install ```moonlight-osmc```
 ```
-/opt/moonlight/moonlight.sh
+sudo dpkg -i moonlight-osmc_x.x.x-x.deb
 ```
-- You can change the streaming parameters by editing ```/home/osmc/.moonlight/moonlight.conf```
+- You can change the streaming parameters by editing ```/home/osmc/.moonlight-osmc/moonlight-osmc.conf```
 
 If all goes well the pi should atempt to pair with your pc. It might fail the first time you run it and then start working the second time. Not really sure why that happens, or if it still does. The pairing key is visible on the pi's screen.
 
