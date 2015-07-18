@@ -5,35 +5,29 @@ Moonlight-osmc provides a OSMC compatible .deb package as well as scripts for la
 I created this project mainly for personal use, so updates may be a bit slow. The code might not be the prettiest, nor the most efficient, but it works for me.
 
 ## Installation
-- Add irtimmers repo to *sources.list* (for *libevdev2*)
+- Add irtimmers repo to ```sources.list``` (for ```libevdev2```)
 ```
 sudo echo 'deb http://archive.itimmer.nl/raspbian/moonlight wheezy main' >> /etc/apt/sources.list
 sudo apt-get update
 ```
-- Install the dependencies for moonlight-embedded.
+- Run the installer
 ```
-sudo apt-get install libopus0 libexpat1 libssl1.0.0 libasound2 libudev0 libavahi-client3 libcurl3 libevdev2 libavahi-common3 libc6
+chmod 755 install.sh
+./install.sh
 ```
-
-- Install *moonlight-osmc.deb*
+- Make sure the sound module is loaded. You can load it on boot by appending ```snd-bcm2835``` to ```/etc/modules```
 ```
-sudo dpkg -i ./moonlight-osmc.deb
+sudo modprobe snd-bcm2835
 ```
-
-- Move *moonlight.sh*, *moonlight-watchdog.sh* and *stream.sh* to */opt/moonlight/* and set their permissions to 0755
-```
-sudo mkdir /opt/moonlight
-sudo mv ./scripts/* /opt/moonlight/
-sudo chmod -R 755 /opt/moonlight/
-```
-
-- Change the IP in *stream.sh* to the IP of the address you will be streaming from. 
-- Test everything by running *moonlight.sh*
+- Test everything by running ```moonlight.sh```
 ```
 /opt/moonlight/moonlight.sh
 ```
+- You can change the streaming parameters by editing ```/home/osmc/.moonlight/moonlight.conf```
 
-If all goes well the pi should atempt to pair with your pc. The pairing key is visible on the pi's screen. You can create the folowing shortcut to run the script directly from Kodi.
+If all goes well the pi should atempt to pair with your pc. It might fail the first time you run it and then start working the second time. Not really sure why that happens, or if it still does. The pairing key is visible on the pi's screen.
+
+You can create the folowing shortcut to run the script directly from Kodi.
 ```
 System.Exec(/opt/moonlight/moonlight.sh)
 ```
@@ -41,9 +35,11 @@ System.Exec(/opt/moonlight/moonlight.sh)
 ## Features
 - Presents the pairing key on screen if needed (no need for pairing via ssh)
 - Restarts Kodi when stream is closed
+- Uses moonlight.conf to edit streaming options
+- Automated installer
 
 ## To-do
-- [ ] Use configuration file instead of editing scripts
-- [ ] Finish and test the automated installer
+- [x] Use configuration file instead of editing scripts
+- [x] Finish and test the automated installer
 - [ ] Custom builds
 - [ ] Setup a repo (PPA?) for easy install and updates
