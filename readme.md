@@ -19,15 +19,13 @@ sudo dpkg -i moonlight-embedded_x.x.x-osmc1_armhf.deb
 ```
 sudo modprobe snd-bcm2835
 ```
-<<<<<<< HEAD
 - Install ```moonlight-osmc```
 ```
 sudo dpkg -i moonlight-osmc_x.x.x-x.deb
-=======
+```
 - Test everything by running ```moonlight.sh```
 ```
 /opt/moonlight-osmc/moonlight.sh
->>>>>>> fa2a8981497492c988469a86c1c168ce074af3ea
 ```
 - You can change the streaming parameters by editing ```/home/osmc/.moonlight-osmc/moonlight-osmc.conf```
 
@@ -42,10 +40,7 @@ System.Exec(/opt/moonlight-osmc/moonlight-osmc.sh)
 - Presents the pairing key on screen if needed (no need for pairing via ssh)
 - Restarts Kodi when stream is closed
 - Uses moonlight-osmc.conf to edit streaming options
-- Automated installer
 
 ## To-do
-- [x] Use configuration file instead of editing scripts
-- [x] Finish and test the automated installer
 - [ ] Custom builds
 - [ ] Setup a repo (PPA?) for easy install and updates
