@@ -23,6 +23,7 @@ sudo modprobe snd-bcm2835
 ```
 /opt/moonlight/moonlight.sh
 ```
+- You can change the streaming parameters by editing */home/osmc/.moonlight/moonlight.conf*
 
 If all goes well the pi should atempt to pair with your pc. It might fail the first time you run it and then start working the second time. Not really sure why that happens, or if it still does. The pairing key is visible on the pi's screen.
 
