@@ -10,7 +10,7 @@ sudo mkdir /opt/moonlight-osmc
 sudo mv ./scripts/* /opt/moonlight-osmc/
 echo "Setting permissions..."
 sudo chmod -R 755 /opt/moonlight-osmc/
-echo "Generating .moonlight.conf"
+echo "Generating .moonlight-osmc.conf"
 sudo rm -rf /home/osmc/.moonlight-osmc
 mkdir /home/osmc/.moonlight-osmc
 echo "#!/bin/sh" > /home/osmc/.moonlight-osmc/moonlight-osmc.conf
