@@ -19,9 +19,15 @@ sudo dpkg -i moonlight-embedded_x.x.x-osmc1_armhf.deb
 ```
 sudo modprobe snd-bcm2835
 ```
+<<<<<<< HEAD
 - Install ```moonlight-osmc```
 ```
 sudo dpkg -i moonlight-osmc_x.x.x-x.deb
+=======
+- Test everything by running ```moonlight.sh```
+```
+/opt/moonlight-osmc/moonlight.sh
+>>>>>>> fa2a8981497492c988469a86c1c168ce074af3ea
 ```
 - You can change the streaming parameters by editing ```/home/osmc/.moonlight-osmc/moonlight-osmc.conf```
 
@@ -29,13 +35,13 @@ If all goes well the pi should atempt to pair with your pc. It might fail the fi
 
 You can create the folowing shortcut to run the script directly from Kodi.
 ```
-System.Exec(/opt/moonlight/moonlight.sh)
+System.Exec(/opt/moonlight-osmc/moonlight-osmc.sh)
 ```
 
 ## Features
 - Presents the pairing key on screen if needed (no need for pairing via ssh)
 - Restarts Kodi when stream is closed
-- Uses moonlight.conf to edit streaming options
+- Uses moonlight-osmc.conf to edit streaming options
 - Automated installer
 
 ## To-do
