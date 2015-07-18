@@ -1,4 +1,5 @@
 # Originally written by miko
 # Modified by dodslaser
-sudo moonlight pair x.x.x.x
-sudo moonlight stream x.x.x.x -1080 -30fps
+. ~/.moonlight.conf
+(cd ~/.moonlight && sudo moonlight pair $GAMESTREAM_IP)
+(cd ~/.moonlight && sudo moonlight stream $GAMESTREAM_IP $MOONLIGHT_OPTS)

@@ -1,0 +1,5 @@
+# Originally written by dodslaser
+# IP of the Gamestream PC
+GAMESTREAM_IP = 0.0.0.0
+# Command-line options to pass to moonlight
+MOONLIGHT_OPTS = "-1080 -30fps"
