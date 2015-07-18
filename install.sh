@@ -5,8 +5,8 @@ sudo apt-get install libopus0 libexpat1 libssl1.0.0 libasound2 libudev0 libavahi
 echo "Installing moonlight..."
 sudo dpkg -i ./moonlight-osmc.deb
 echo "Copying scripts..."
-sudo rm -rf /opt/moonlight
-sudo mkdir /opt/moonlight
+sudo rm -rf /opt/moonlight-osmc
+sudo mkdir /opt/moonlight-osmc
 sudo mv ./scripts/* /opt/moonlight-osmc/
 echo "Setting permissions..."
 sudo chmod -R 755 /opt/moonlight-osmc/
