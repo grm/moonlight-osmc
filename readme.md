@@ -21,21 +21,21 @@ sudo modprobe snd-bcm2835
 ```
 - Test everything by running ```moonlight.sh```
 ```
-/opt/moonlight/moonlight.sh
+/opt/moonlight-osmc/moonlight.sh
 ```
-- You can change the streaming parameters by editing ```/home/osmc/.moonlight/moonlight.conf```
+- You can change the streaming parameters by editing ```/home/osmc/.moonlight-osmc/moonlight-osmc.conf```
 
 If all goes well the pi should atempt to pair with your pc. It might fail the first time you run it and then start working the second time. Not really sure why that happens, or if it still does. The pairing key is visible on the pi's screen.
 
 You can create the folowing shortcut to run the script directly from Kodi.
 ```
-System.Exec(/opt/moonlight/moonlight.sh)
+System.Exec(/opt/moonlight-osmc/moonlight-osmc.sh)
 ```
 
 ## Features
 - Presents the pairing key on screen if needed (no need for pairing via ssh)
 - Restarts Kodi when stream is closed
-- Uses moonlight.conf to edit streaming options
+- Uses moonlight-osmc.conf to edit streaming options
 - Automated installer
 
 ## To-do
