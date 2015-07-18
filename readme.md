@@ -5,7 +5,7 @@ Moonlight-osmc provides a OSMC compatible .deb package as well as scripts for la
 I created this project mainly for personal use, so updates may be a bit slow. The code might not be the prettiest, nor the most efficient, but it works for me.
 
 ## Installation
-- Add irtimmers repo to *sources.list* (for *libevdev2*)
+- Add irtimmers repo to ```sources.list``` (for ```libevdev2```)
 ```
 sudo echo 'deb http://archive.itimmer.nl/raspbian/moonlight wheezy main' >> /etc/apt/sources.list
 sudo apt-get update
@@ -15,15 +15,15 @@ sudo apt-get update
 chmod 755 install.sh
 ./install.sh
 ```
-- Make sure the sound module is loaded. You can load it on boot by appending *snd-bcm2835* to */etc/modules*
+- Make sure the sound module is loaded. You can load it on boot by appending ```snd-bcm2835``` to ```/etc/modules```
 ```
 sudo modprobe snd-bcm2835
 ```
-- Test everything by running *moonlight.sh*
+- Test everything by running ```moonlight.sh```
 ```
 /opt/moonlight/moonlight.sh
 ```
-- You can change the streaming parameters by editing */home/osmc/.moonlight/moonlight.conf*
+- You can change the streaming parameters by editing ```/home/osmc/.moonlight/moonlight.conf```
 
 If all goes well the pi should atempt to pair with your pc. It might fail the first time you run it and then start working the second time. Not really sure why that happens, or if it still does. The pairing key is visible on the pi's screen.
 
