@@ -13,7 +13,7 @@ sudo apt-get update
 - Install ```moonlight-embedded``` from the provided .deb and all dependencies
 ```
 sudo apt-get install libopus0 libexpat1 libssl1.0.0 libasound2 libudev0 libavahi-client3 libcurl3 libevdev2 libavahi-common3 libc6
-sudo dpkg -i moonlight-embedded_x.x.x-osmc1_armhf.deb
+sudo dpkg -i moonlight-embedded_X.X.X-osmcX_armhf.deb
 ```
 - Make sure the sound module is loaded. You can load it on boot by appending ```snd-bcm2835``` to ```/etc/modules```
 ```
@@ -21,7 +21,7 @@ sudo modprobe snd-bcm2835
 ```
 - Install ```moonlight-osmc```
 ```
-sudo dpkg -i moonlight-osmc_x.x.x-x.deb
+sudo dpkg -i moonlight-osmc_X.X.X-X.deb
 ```
 - Test everything by running ```moonlight.sh```
 ```
