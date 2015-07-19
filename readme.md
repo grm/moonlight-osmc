@@ -42,5 +42,7 @@ System.Exec(/opt/moonlight-osmc/moonlight-osmc.sh)
 - Uses moonlight-osmc.conf to edit streaming options
 
 ## To-do
+- [ ] Controller configuration
 - [ ] Custom builds
+- [ ] Kodi add-on
 - [ ] Setup a repo (PPA?) for easy install and updates
