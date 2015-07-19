@@ -1,6 +1,6 @@
 # Moonlight-osmc
 ## About
-Moonlight-osmc provides a OSMC compatible .deb package as well as scripts for launching moonlight-embedded from straight from Kodi on the raspberry pi. For now the .deb is simply taken from [moonlight-embedded](https://github.com/irtimmer/moonlight-embedded) and modified to run on OSMC. The scripts are originally from [this post on the OSMC forums](https://discourse.osmc.tv/t/limelight-embedded-and-osmc/1884/18) and modified to run the C rewrite of moonlight.
+Moonlight-osmc provides a OSMC compatible .deb package of [moonlight-embedded](https://github.com/irtimmer/moonlight-embedded) as well as scripts for launching a stream from Kodi on the raspberry pi. For now the moonlight-embedded .deb is simply taken from [irtimmer's repo](http://archive.itimmer.nl/raspbian/moonlight/) and modified to run on OSMC. The scripts are originally from [this post on the OSMC forums](https://discourse.osmc.tv/t/limelight-embedded-and-osmc/1884/18) and modified to run the C rewrite of moonlight.
 
 I created this project mainly for personal use, so updates may be a bit slow. The code might not be the prettiest, nor the most efficient, but it works for me.
 
