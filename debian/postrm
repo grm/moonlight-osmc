@@ -1,2 +1,2 @@
 #!/bin/sh
-rm -rf /usr/etc/moonlight-osmc
+rm -rf /etc/moonlight-osmc

@@ -1,5 +1,5 @@
 #!/bin/bash
-if [ ! -f /usr/etc/moonlight-osmc/moonlight-osmc.conf ]; then
+if [ ! -f /etc/moonlight-osmc/moonlight-osmc.conf ]; then
   moonlight-osmc-config
 else
   echo "Config file moonlight-osmc.conf exists, skipping configuration!"
