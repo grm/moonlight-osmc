@@ -3,9 +3,9 @@ INSTALL_LOCATION=$(DESTDIR)
 all: install
 install:
 	cp moonlight-osmc.sh $(INSTALL_LOCATION)usr/bin/moonlight-osmc
-	chmod 755 $(INSTALL_LOCATION)usr/bin/moonlight-osmc.sh
+	chmod 755 $(INSTALL_LOCATION)usr/bin/moonlight-osmc
 	cp moonlight-osmc-config.sh $(INSTALL_LOCATION)usr/bin/moonlight-osmc-config
-	chmod 755 $(INSTALL_LOCATION)usr/bin/moonlight-osmc-config.sh
+	chmod 755 $(INSTALL_LOCATION)usr/bin/moonlight-osmc-config
 	mkdir $(INSTALL_LOCATION)etc/moonlight-osmc
 	cp moonlight-osmc-watchdog.sh $(INSTALL_LOCATION)etc/moonlight-osmc/moonlight-osmc-watchdog.sh
 	chmod 755 $(INSTALL_LOCATION)etc/moonlight-osmc/moonlight-osmc-watchdog.sh
