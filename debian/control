@@ -1,9 +1,0 @@
-Package: moonlight-osmc
-Version: 0.2.0-1
-Section: games
-Priority: extra
-Architecture: armhf
-Depends: moonlight-embedded, rbp-userland-osmc
-Maintainer: Erik Lundgren <eriklundgren93@gmail.com>
-Description: Moonlight-osmc
- Provides scripts for running moonlight from Kodi on OSMC
