@@ -11,3 +11,6 @@ install:
 	chmod 755 $(INSTALL_LOCATION)etc/moonlight-osmc/moonlight-osmc-watchdog.sh
 	cp moonlight-osmc-stream.sh $(INSTALL_LOCATION)etc/moonlight-osmc/moonlight-osmc-stream.sh
 	chmod 755 $(INSTALL_LOCATION)etc/moonlight-osmc/moonlight-osmc-stream.sh
+uninstall:
+	rm -rf $(INSTALL_LOCATION)bin/moonlight-osmc.sh
+	rm -rf $(INSTALL_LOCATION)etc/moonlight-osmc
