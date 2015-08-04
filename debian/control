@@ -1,0 +1,15 @@
+Source: moonlight-osmc
+Section: games
+Priority: optional
+Maintainer: Erik Lundgren <erik@unknown>
+Build-Depends: debhelper (>= 8.0.0)
+Standards-Version: 3.9.4
+Homepage: <insert the upstream URL, if relevant>
+#Vcs-Git: git://git.debian.org/collab-maint/moonlight-osmc.git
+#Vcs-Browser: http://git.debian.org/?p=collab-maint/moonlight-osmc.git;a=summary
+
+Package: moonlight-osmc
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: moonlight-osmc
+ Scripts for running moonlight-embedded on OSMC for the RaspberryPi
