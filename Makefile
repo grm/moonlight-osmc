@@ -13,4 +13,5 @@ install:
 	chmod 755 $(INSTALL_LOCATION)etc/moonlight-osmc/moonlight-osmc-stream.sh
 uninstall:
 	rm -rf $(INSTALL_LOCATION)usr/bin/moonlight-osmc.sh
+	rm -rf $(INSTALL_LOCATION)usr/bin/moonlight-osmc-config.sh
 	rm -rf $(INSTALL_LOCATION)etc/moonlight-osmc
