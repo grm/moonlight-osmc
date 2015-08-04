@@ -1,7 +1,13 @@
-DESTDIR=/
-INSTALL_LOCATION=$(DESTDIR)
+DESTDIR=
+INSTALL_LOCATION=$(DESTDIR)/
 all: install
-install:
+checkdir:
+ifneq ($(INSTALL_LOCATION), /)
+	mkdir $(INSTALL_LOCATION)usr
+	mkdir $(INSTALL_LOCATION)usr/bin
+	mkdir $(INSTALL_LOCATION)etc
+endif
+install: checkdir
 	cp moonlight-osmc.sh $(INSTALL_LOCATION)usr/bin/moonlight-osmc
 	chmod 755 $(INSTALL_LOCATION)usr/bin/moonlight-osmc
 	cp moonlight-osmc-config.sh $(INSTALL_LOCATION)usr/bin/moonlight-osmc-config
