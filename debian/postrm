@@ -1,2 +1,6 @@
-#!/bin/sh
-rm -rf /etc/moonlight-osmc
+#!/bin/bash
+case $1 in
+  *)
+    rm -rf /etc/moonlight-osmc
+  ;;
+esac
