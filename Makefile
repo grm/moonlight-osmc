@@ -1,5 +1,5 @@
 DESTDIR=/
-INSTALL_LOCATION=$(DESTDIR)usr/share/
+INSTALL_LOCATION=$(DESTDIR)usr/local/
 all: install
 install:
 	cp moonlight-osmc.sh $(INSTALL_LOCATION)bin/moonlight-osmc.sh
