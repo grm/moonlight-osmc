@@ -1,3 +1,4 @@
+#!/bin/sh
 # Originally written by miko
 # Modified by dodslaser
 . /etc/moonlight-osmc/moonlight-osmc.conf

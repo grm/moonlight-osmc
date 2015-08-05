@@ -1,5 +1,5 @@
 Source: moonlight-osmc
-Section: miscellaneous
+Section: misc
 Priority: optional
 Maintainer: Erik Lundgren <eriklundgren93@gmail.com>
 Build-Depends: debhelper (>= 8.0.0)
