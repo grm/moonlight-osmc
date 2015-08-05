@@ -14,6 +14,6 @@ all:
 	cp moonlight-osmc-stream.sh $(TMPDIR)/etc/moonlight-osmc/moonlight-osmc-stream.sh
 	chmod 755 $(TMPDIR)/etc/moonlight-osmc/moonlight-osmc-stream.sh
 install:
-	cp -R $(shell cat moonlight-osmc_tmp)/* $(INSTALL _LOCATION)
+	cp -R $(shell cat moonlight-osmc_tmp)/* $(INSTALL_LOCATION)
 clean:
 	rm -rf /tmp/moonlight-osmc_tmp.*
