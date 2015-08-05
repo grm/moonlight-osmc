@@ -10,16 +10,16 @@ I created this project mainly for personal use, so updates may be a bit slow. Th
 
 - Add irtimmers repo and my ppa to `/etc/apt/sources.list`
 
-  *sources.list:*
-```sourceslist
-deb http://ppa.launchpad.net/dodslaser/moonlight-osmc/ubuntu trusty main
-deb http://archive.itimmer.nl/raspbian/moonlight wheezy main
-```
-*Run these commands in the terminal:*
-```shell
-sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 0C457059
-sudo apt-get update
-```
+  *add these to sources.list:*
+  ```sourceslist
+  deb http://ppa.launchpad.net/dodslaser/moonlight-osmc/ubuntu trusty main
+  deb http://archive.itimmer.nl/raspbian/moonlight wheezy main
+  ```
+  *Run these commands in the terminal:*
+  ```shell
+  sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 0C457059
+  sudo apt-get update
+  ```
 - Install the `moonlight-embedded` dependencies
 ```
 sudo apt-get install libopus0 libexpat1 libssl1.0.0 libasound2 libudev0 libavahi-client3 libcurl3 libevdev2 libavahi-common3 libc6
