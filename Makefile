@@ -1,7 +1,8 @@
-TMPDIR:=$(shell mktemp -d /tmp/.XXXXX)
+TMPDIR:=$(shell mktemp -d /tmp/moonlight-osmc_tmp.XXXXX)
 DESTDIR=
 INSTALL_LOCATION=$(DESTDIR)/
 all:
+	echo $(TMPDIR) > moonlight-osmc_tmp
 	mkdir -p $(TMPDIR)/usr/bin
 	mkdir -p $(TMPDIR)/etc/moonlight-osmc
 	cp moonlight-osmc.sh $(TMPDIR)/usr/bin/moonlight-osmc
@@ -13,6 +14,6 @@ all:
 	cp moonlight-osmc-stream.sh $(TMPDIR)/etc/moonlight-osmc/moonlight-osmc-stream.sh
 	chmod 755 $(TMPDIR)/etc/moonlight-osmc/moonlight-osmc-stream.sh
 install:
-	cp -R $(TMPDIR)/* $(INSTALL _LOCATION)
+	cp -R $(shell cat moonlight-osmc_tmp)/* $(INSTALL _LOCATION)
 clean:
-	rm -rf $(TMPDIR)
+	rm -rf /tmp/moonlight-osmc_tmp.*
