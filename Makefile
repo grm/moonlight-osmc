@@ -17,3 +17,4 @@ install:
 	cp -R $(shell cat moonlight-osmc_tmp)/* $(INSTALL_LOCATION)
 clean:
 	rm -rf /tmp/moonlight-osmc_tmp.*
+	rm -rf moonlight-osmc_tmp
