@@ -1,0 +1,15 @@
+Source: moonlight-osmc
+Section: misc
+Priority: optional
+Maintainer: Erik Lundgren <eriklundgren93@gmail.com>
+Build-Depends: debhelper (>= 8.0.0)
+Standards-Version: 3.9.5
+Homepage: https://github.com/dodslaser/moonlight-osmc
+Vcs-Git: https://github.com/dodslaser/moonlight-osmc.git
+Vcs-Browser: https://github.com/dodslaser/moonlight-osmc
+
+Package: moonlight-osmc
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Moonlight scripts for OSMC
+ Scripts for running moonlight-embedded on OSMC for the RaspberryPi

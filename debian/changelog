@@ -1,0 +1,5 @@
+moonlight-osmc (0.2.1-1) trusty; urgency=low
+
+  * Initial release (Closes: #100)  No previous ITP
+
+ -- Erik Lundgren <eriklundgren93@gmail.com>  Tue, 04 Aug 2015 11:00:29 +0200
