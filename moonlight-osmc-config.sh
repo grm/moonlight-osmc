@@ -1,4 +1,5 @@
 #!/bin/sh
+set -e
 echo "Generating configuration file..."
 echo "#!/bin/sh" > /etc/moonlight-osmc/moonlight-osmc.conf
 echo "Enter the desired streaming resolution (1080 or 720) [1080]:"

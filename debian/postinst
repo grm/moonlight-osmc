@@ -1,4 +1,6 @@
 #!/bin/bash
+#DEBHELPER#
+set -e
 case $1 in
   *)
     if [ ! -f /etc/moonlight-osmc/moonlight-osmc.conf ]; then
