@@ -1,4 +1,4 @@
-moonlight-osmc (0.2.2) wheezy; urgency=low
+moonlight-osmc (0.2.2-0) wheezy; urgency=low
 
   * Initial release (Closes: #100)  No previous ITP
 
