@@ -10,6 +10,6 @@ Vcs-Browser: https://github.com/dodslaser/moonlight-osmc
 
 Package: moonlight-osmc
 Architecture: all
-Depends: ${shlibs:Depends}, ${misc:Depends}
+Depends: moonlight-osmc, ${shlibs:Depends}, ${misc:Depends}
 Description: Moonlight scripts for OSMC
  Scripts for running moonlight-embedded on OSMC for the RaspberryPi
