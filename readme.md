@@ -5,7 +5,6 @@ Moonlight-osmc provides a OSMC compatible .deb package of [moonlight-embedded](h
 I created this project mainly for personal use, so updates may be a bit slow. The code might not be the prettiest, nor the most efficient, but it works for me.
 
 ## Installation
-**Version 0.2.0 of moonlight-osmc places scripts in `/usr/bin` and `/etc/moonlight-osmc` rather than `/opt/moonlight-osmc` and `~/.moonlight-osmc/moonlight-osmc.conf`, and changes the debian packaging. The earlier versions shouldn't break anything, but it might be a good idea to clean everything out before upgrading.**
 
 - Make sure the sound module is loaded. You can load it on boot by adding `snd-bcm2835` to `/etc/modules`
 ```shell
@@ -34,7 +33,8 @@ apt-get install moonlight-osmc
 - Uses moonlight-osmc-config for configuring moonlight stream parameters
 
 ## Notes
-- Irtimmer has merged my pull request for official OSMC support, but there hasn't been a new release yet. I'll keep a moddified deb for OSMC in my repo until his repo works. **You should NOT have both mine and irimmers's repos in sources.list at the same time for now**
+- Irtimmer has merged my pull request for official OSMC support, but there hasn't been a new release yet. I'll keep a moddified deb for OSMC in my repo until his repo works. **You should NOT have both mine and irimmers's repos in `sources.list` at the same time for now**
+- Version 0.2.0 of moonlight-osmc places scripts in `/usr/bin` and `/etc/moonlight-osmc` rather than `/opt/moonlight-osmc` and `~/.moonlight-osmc/moonlight-osmc.conf`, and changes the debian packaging. The earlier versions shouldn't break anything, but it might be a good idea to clean everything out before upgrading.
 
 ## To-do
 - [ ] Controller configuration
