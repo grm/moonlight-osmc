@@ -23,8 +23,8 @@ apt-key adv --keyserver keys.gnupg.net --recv 4A1C897B
 apt-get install moonlight-osmc
 ```
 ## Usage
-- `moonlight-osmc` : Pair and start the stream
-- `moonlight-osmc-config` : create `/etc/moonlight-osmc/moonlight-osmc.conf`
+- `moonlight-osmc` - Pair and start the stream
+- `moonlight-osmc-config` - Create `/etc/moonlight-osmc/moonlight-osmc.conf`
 - Create a shortcut to `System.Exec(moonlight-osmc)` in kodi to launch from the GUI
 
 ## Features
