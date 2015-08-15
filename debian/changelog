@@ -1,3 +1,9 @@
+moonlight-osmc (0.2.3-0) wheezy; urgency=medium
+
+  * No longer depends on won moonlight-embedded (OSMC support is now in official moonlight-embedded packages)
+
+ --  Erik Lundgren <eriklundgren93@gmail.com>  Sat, 15 Aug 2015 09:36:01 +0000
+
 moonlight-osmc (0.2.2-2) wheezy; urgency=low
 
   * Initial release (Closes: #100)  No previous ITP
