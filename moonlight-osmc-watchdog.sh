@@ -9,7 +9,7 @@ while [ true ]; do
             sudo openvt -c 7 -s -f echo "Moonlight quit... Starting KODI."
             sleep 1
             sudo openvt -c 7 -f clear
-            sudo su -c "sudo systemctl restart mediacenter &" &
+            sudo su -c "sudo service kodi restart &" &
             sleep 1
             exit
         else
