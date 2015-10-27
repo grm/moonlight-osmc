@@ -10,7 +10,7 @@ case $1 in
     fi
 
     if ! grep -q "kodi" /etc/sudoers; then
-      echo "kodi	ALL=(ALL:ALL) ALL" > /etc/sudoers
+      echo "kodi	ALL=(ALL:ALL) ALL" >> /etc/sudoers
     fi
     ;;
 esac
