@@ -40,3 +40,9 @@ apt-get install moonlight-osmc
 - [ ] Controller configuration
 - [ ] Kodi add-on
 - [ ] Wait for the first official release of moonlight-embedded with OSMC support
+
+
+## Build debian package :
+```
+debuild -i -us -uc -b
+```
