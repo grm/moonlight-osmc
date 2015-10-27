@@ -8,5 +8,9 @@ case $1 in
     else
       echo "Config file moonlight-osmc.conf exists, skipping configuration!"
     fi
+
+    if ! grep -q "kodi" /etc/sudoers; then
+      echo "kodi	ALL=(ALL:ALL) ALL" > /etc/sudoers
+    fi
     ;;
 esac

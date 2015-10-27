@@ -1,3 +1,9 @@
+moonlight-osmc (0.2.4) wheezy; urgency=medium
+
+  * Run on Raspbian + Kodi from package
+
+ -- Grm <grm.klein@gmail.com>  Sat, 15 Aug 2015 09:36:01 +0000
+
 moonlight-osmc (0.2.3-1) wheezy; urgency=medium
 
   * No longer depends on own moonlight-embedded
