@@ -5,8 +5,8 @@
 # Start watchdog
 sudo -u kodi -s /bin/bash -c "sh /etc/moonlight-osmc/moonlight-osmc-watchdog.sh &"
 # Stop mediacenter
-sudo -u kodi -s /bin/bash -c "service kodi stop"
+sudo -u kodi -s /bin/bash -c "sudo service kodi stop"
 # Start stream
-sudo -u kodi -s /bin/bash -c "/etc/moonlight-osmc/moonlight-osmc-stream.sh >/dev/null 2>&1"
+sudo -u kodi -s /bin/bash -c "/etc/moonlight-osmc/moonlight-osmc-stream.sh >/tmp/moonlight 2>&1 &"
 sleep 2
 exit

@@ -23,3 +23,4 @@ echo "Enter any additional arguments for moonlight:"
 read GEN_MOONLIGHT_ARGS
 echo "MOONLIGHT_ARGS='$GEN_MOONLIGHT_ARGS'" >> /etc/moonlight-osmc/moonlight-osmc.conf
 chmod 755 /etc/moonlight-osmc/moonlight-osmc.conf
+moonlight pair $GEN_MOONLIGHT_IP
